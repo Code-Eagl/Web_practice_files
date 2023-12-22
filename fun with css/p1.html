@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #f6ea6b;
+      display: grid;
+      place-items: center;
+    }
+    section {
+      margin-top: 100px;
+      background-color: rgb(42, 200, 200);
+      width: 227px;
+      height: 230px;
+    }
+
+    #d,
+    #a {
+      margin-top: 100px;
+      margin-left: 10px;
+      width: 190px;
+      height: 30px;
+      background-color: #5216ad;
+      position: absolute;
+      rotate: 45deg;
+    }
+    #a {
+      rotate: -45deg;
+    }
+    div::before,
+    div::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #1a0cdd;
+      border-radius: 50%;
+      translate: -10px -15px;
+      box-shadow: 190px 0 #1a0ddd;
+    }
+  </style>
+
+  <body>
+    <section>
+      <div id="d"></div>
+      <div id="a"></div>
+    </section>
+  </body>
+</html>

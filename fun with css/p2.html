@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: #3c8d3f;
+    }
+    body,
+    #head {
+      display: grid;
+      place-items: center;
+    }
+    #bolts,
+    #eye1,
+    #eye2,
+    #mouth {
+      position: absolute;
+    }
+    #bolts {
+      width: 100px;
+      height: 10px;
+      background: #1a1d2f;
+      margin-top: 20px;
+      z-index: -1;
+    }
+    #bolts::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 32px;
+      background: #1a1d2f;
+      border-radius: 7px;
+      translate: -10px -10px;
+      box-shadow: 110px 0px #1a1d2f;
+    }
+    #head {
+      width: 150;
+      height: 140px;
+      background: #14f078;
+      border-radius: 10px 10px 75px 75px;
+      overflow: hidden;
+    }
+    #head > #hair {
+      height: 45px;
+      width: 100px;
+      background: #1a1d2f;
+      align-self: start;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 67%,
+        90% 100%,
+        80% 67%,
+        70% 100%,
+        60% 67%,
+        50% 100%,
+        40% 67%,
+        30% 100%,
+        20% 67,
+        10% 100%,
+        0 67%
+      );
+    }
+    #eye1,
+    #eye2 {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: radial-gradient(#ffffff 5px, #1a1d2f 0);
+      translate: -30px -10px;
+    }
+    #eye2 {
+      translate: 30px -10px;
+    }
+    #mouth {
+      width: 40px;
+      height: 20px;
+      background: #1a1d2f;
+      border-radius: 0 0 20px 20px;
+      translate: 0 45px;
+    }
+  </style>
+  <body>
+    <section>
+      <div id="bolts"></div>
+      <div id="head">
+        <div id="hair"></div>
+        <div id="eye1"></div>
+        <div id="eye2"></div>
+        <div id="mouth"></div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: #ed6a9d;
+    }
+    body,
+    div {
+      display: grid;
+      place-items: center;
+      place-content: center;
+    }
+    #head {
+      width: 180px;
+      height: 150px;
+      background: #050b4d;
+      border-radius: 50%;
+      margin-top: 60px;
+      grid-auto-flow: column;
+      gap: 30px;
+    }
+    #head > div {
+      width: 40px;
+      height: 40px;
+      background: #ffc100;
+      border-radius: 20px 0;
+      rotate: 45deg;
+      margin-bottom: 30px;
+    }
+    #head > div::before {
+      content: "";
+      display: block;
+      height: 30px;
+      width: 10px;
+      background: #050044;
+      rotate: 45deg;
+      border-radius: 50%;
+    }
+    #nose,
+    #ear1,
+    #ear2 {
+      position: absolute;
+    }
+    #nose {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #ed6a90;
+      margin-top: 95px;
+    }
+    #ear1,
+    #ear2 {
+      height: 60px;
+      width: 50px;
+      background: linear-gradient(37deg, #050044 62%, #ed6a9d 0);
+      z-index: -1;
+    }
+    #ear1 {
+      translate: -53.5px -57px;
+      rotate: -15deg;
+    }
+    #ear2 {
+      translate: 53.5px -57px;
+      rotate: 15deg;
+      scale: -1 1;
+    }
+  </style>
+  <body>
+    <div id="ear1"></div>
+    <div id="ear2"></div>
+    <div id="head">
+      <div></div>
+      <div></div>
+    </div>
+    <div id="nose"></div>
+  </body>
+</html>
