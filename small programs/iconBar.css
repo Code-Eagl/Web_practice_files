@@ -1,0 +1,54 @@
+body {
+  background-color: #555;
+  overflow-x: hidden;
+}
+.icon-bar {
+  width: 100px; /* Set a specific width */
+  background-color: #2c2929; /* Dark-grey background */
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: rgb(250, 247, 247); /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04aa6d; /* Add an active/current color */
+}
+
+.icon-bar2 {
+  width: 90%; /* Full-width */
+  background-color: #353333; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+  margin-left: 100px;
+}
+
+.icon-bar2 a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 6px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar2 a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active2 {
+  background-color: #04aa6d; /* Add an active/current color */
+}
+
+.title {
+  background-color: #04aa6d;
+  display: block;
+}
